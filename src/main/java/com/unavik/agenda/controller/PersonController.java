@@ -7,4 +7,10 @@ import java.util.List;
 public interface PersonController {
 
     List<PersonDto> getPersons();
+
+    PersonDto getPerson(Long idPerson);
+
+    PersonDto save(PersonDto personDto);
+
+    PersonDto update(Long idPerson, PersonDto personDto);
 }

@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "firstName": "Charly",
+    "lastName": "Brown",
+    "birthDay": "1985-11-28T06:00:00.000+00:00"
+  },
+  {
+    "id": 2,
+    "firstName": "Peter",
+    "lastName": "Parker",
+    "birthDay": "2001-08-10T05:00:00.000+00:00"
+  },
+  {
+    "id": 3,
+    "firstName": "Barry",
+    "lastName": "Allen",
+    "birthDay": "2001-10-10T06:00:00.000+00:00"
+  },
+  {
+    "id": 4,
+    "firstName": "Arthur",
+    "lastName": "Curry",
+    "birthDay": "1990-01-10T06:00:00.000+00:00"
+  }
+]

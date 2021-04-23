@@ -29,17 +29,18 @@ public class PersonControllerUnitTest {
     @Test
     @DisplayName("Prueba para obtener las personas dadas de alta")
     void addInvalidAddressTest() {
+        //Clases para probar
         List<Person> personList = new ArrayList<>();
         personList.add(new Person(1L, "First 01", "Last 01", new Date()));
         personList.add(new Person(2L, "First 02", "Last 02", new Date()));
         personList.add(new Person(3L, "First 03", "Last 03", new Date()));
         personList.add(new Person(4L, "First 04", "Last 04", new Date()));
         personList.add(new Person(5L, "First 05", "Last 05", new Date()));
-
+        //Configuración de llamadas a metodos
         when(personService.getPersons()).thenReturn(personList);
-
+        //Ejecución del código
         List<PersonDto> persons = personController.getPersons();
-
+        //Verificación de resultados
         assertEquals(5, persons.size());
     }
 

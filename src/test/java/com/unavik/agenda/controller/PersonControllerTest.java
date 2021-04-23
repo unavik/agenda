@@ -26,6 +26,5 @@ public class PersonControllerTest {
         assertEquals("1985-11-28", persons.get(0).getBirthDay().toString().substring(0,10));
         assertEquals("Charly", persons.get(0).getFirstName());
         assertEquals("Brown", persons.get(0).getLastName());
-
     }
 }

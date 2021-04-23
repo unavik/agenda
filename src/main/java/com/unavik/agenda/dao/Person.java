@@ -1,5 +1,7 @@
 package com.unavik.agenda.dao;
 
+import com.unavik.agenda.dto.PersonDto;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -20,6 +22,12 @@ public class Person {
     private Date birthDay;
 
     public Person() {
+    }
+
+    public Person(final PersonDto personDto) {
+        this.firstName = personDto.getFirstName();
+        this.lastName = personDto.getLastName();
+        this.birthDay = personDto.getBirthDay();
     }
 
     public Person(Long id, String firstName, String lastName, Date birthDay) {
